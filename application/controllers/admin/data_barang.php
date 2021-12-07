@@ -41,4 +41,10 @@ class Data_barang extends CI_Controller
 		$this->model_barang->addData($data, 'tb_barang');
 		redirect('admin/data_barang');
 	}
+
+	public function hapus($id)
+	{
+		$this->model_barang->delete($id);
+		redirect(base_url('admin/data_barang'));
+	}
 }

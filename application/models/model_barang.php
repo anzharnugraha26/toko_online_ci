@@ -10,4 +10,9 @@ class Model_barang extends CI_Model
 	{
 		$this->db->insert($table, $data);
 	}
+
+	public function delete($id){
+		$this->db->where('id_brg' , $id);
+		$this->db->delete('tb_barang');
+	}
 }

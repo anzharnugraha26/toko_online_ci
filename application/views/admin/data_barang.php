@@ -40,7 +40,7 @@
 										<a href="" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a>
 									</td>
 									<td>
-										<a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
+									<a href="<?php echo base_url('admin/data_barang/hapus/'). $brg->id_brg ?>" class="btn btn-danger bn-sm" onclick="return confirm('Anda yakin mau menghapus item ini ?')"><i class="fas fa-trash-alt"></i> Delete</a>
 									</td>
 								</tr>
 							<?php endforeach ?>
