@@ -36,7 +36,7 @@
 								<h5 class="card-title"><?php echo $brg->nama_brg ?></h5>
 								<p></p><small> <?php echo $brg->keterangan ?></small>
 								<p><span class="badge bg-success">Rp. <?php echo $brg->harga ?></span></p>
-								<a href="#" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+								<a href="<?php echo base_url('dashboard/add_to_cart/') . $brg->id_brg ?>" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
 								<a href="#" class="btn btn-sm btn-success"><i class="fas fa-info-circle"></i> View Detail</a>
 							</div>
 						</div>
