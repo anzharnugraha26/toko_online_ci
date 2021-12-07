@@ -28,6 +28,15 @@
 					<td>Rp. <?php echo number_format($this->cart->total(), 0, ',', '.')  ?></td>
 				</tr>
 			</table>
+
+			<div align="right">
+				<a href="<?php echo base_url('dashboard/hapus_keranjang') ?>" class="btn btn-danger" onclick="return confirm('Anda yakin mau menghapus daftar belanja? ?')">
+					<i class="fas fa-trash-alt"></i> Hapus Cart</a>
+				<a href="<?php echo base_url('/') ?>" class="btn  btn-primary">
+					<i class="fas fa-step-backward"></i> Lanjutkan Belanja</a>
+				<a href="<?php echo base_url('dashboard/pembayaran') ?>" class="btn  btn-success">
+					<i class="fas fa-money-bill-alt"></i> Check-Out</a>
+			</div>
 		</div>
 
 	</main>
