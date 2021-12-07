@@ -34,7 +34,7 @@
 									<td>Rp. <?php echo $brg->harga ?></td>
 									<td><?php echo $brg->stok ?></td>
 									<td>
-										<a href="" class="btn btn-success btn-sm"><i class="far fa-edit"></i> Edit</a>
+										<a href="#" class="btn btn-success btn-sm" id="edit" onclick="submit()" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-edit"></i> Edit</a>
 									</td>
 									<td>
 										<a href="" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a>
@@ -97,3 +97,11 @@
 			</div>
 		</div>
 	</main>
+
+	<script>
+		$(document).ready(function(){
+			$("a#edit").click(function(){
+				alert('test');
+			})
+		});
+	</script>
