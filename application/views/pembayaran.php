@@ -23,7 +23,7 @@
 					<form action="<?php echo base_url('dashboard/proses_pesanan') ?>" method="post">
 						<div class="mb-3 form-group">
 							<label for="exampleInputEmail1" class="form-label">Nama Lengkap Anda</label>
-							<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Lengkap Anda">
+							<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama" placeholder="Nama Lengkap Anda">
 						</div>
 						<div class="mb-3 form-group">
 							<label for="exampleInputEmail1" class="form-label">No Telpon Anda</label>
@@ -31,7 +31,7 @@
 						</div>
 						<div class="mb-3 form-group">
 							<label for="exampleInputEmail1" class="form-label">Alamat Lengkap Anda</label>
-							<textarea type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+							<textarea name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
 						</div>
 						<div class="mb-3 form-group">
 							<label for="exampleInputEmail1" class="form-label">Jasa Pengiriman</label>
