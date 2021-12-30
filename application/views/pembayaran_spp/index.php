@@ -1,14 +1,22 @@
-<div class="container">
-	<div class="row">
-		<div class="col">
-			<form id="payment-form" method="post" action="<?= site_url() ?>/snap/finish">
-				<input type="hidden" name="result_type" id="result-type" value="">
+<div id="layoutSidenav_content">
+<main>
+	<div class="container mt-4">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="row">
+						<label for="test">test</label>
+					</div>
+					<div class="card-footer">
+						<button id="pay-button" class="btn btn-primary">Pay!</button>
+					</div>
+				</div>
+			</div>
 		</div>
-		<input type="hidden" name="result_data" id="result-data" value="">
 	</div>
-	</form>
 
-	<button id="pay-button">Pay!</button>
+
+
 	<script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-RT96BokoJBdHxB9s"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -58,7 +66,4 @@
 			});
 		});
 	</script>
-
-</div>
-</div>
-</div>
+</main>
